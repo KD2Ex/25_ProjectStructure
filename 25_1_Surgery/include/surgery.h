@@ -12,10 +12,6 @@ struct coordinates {
     void print() {
         cout << x << ";" << y << endl;
     }
-
-    bool isEqual(coordinates a, coordinates b) {
-        return a.x == b.x && a.y == b.y;
-    }
 };
 
 void scalpel(coordinates startingPoint, coordinates endingPoint) {
@@ -36,3 +32,6 @@ void suture(coordinates startingPoint, coordinates endingPoint) {
     << "] and [" << endingPoint.x << ";" << endingPoint.y << "]\n";
 }
 
+bool isEqual(coordinates a, coordinates b) {
+    return a.x == b.x && a.y == b.y;
+}
